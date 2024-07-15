@@ -1,0 +1,146 @@
+body {
+    background-color: #d9e9ea; /* Цвет фона */
+
+}
+
+.minesweeper {
+    font-family: sans-serif; 
+    color: #0e71be; /* Цвет текста */
+
+}
+
+.game-head {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 48, 68, 0.5);  
+    align-items: stretch;
+    
+}
+
+.smile-and-timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.face-img {
+    width: 50px;
+    height: 50px;
+    border: 2px double rgb(2, 63, 133);
+    border-radius: 10px;
+    padding: 3px;
+    margin-right: 10px;
+    
+} 
+
+.timer {
+    margin-left: 10px;
+    border: 2px solid rgb(2, 63, 133); 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 24px;
+    background-color: rgb(184, 203, 214);
+    color: rgb(2, 63, 133);
+    font-weight: bold;
+}
+
+.size-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    
+    
+}
+
+.button {
+    background-color: rgb(184, 203, 214); /* Задать цвет фона */
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(2, 63, 133);
+
+}
+.flex-container {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center; /* Горизонтальное выравнивание по центру */
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+    
+}
+
+.game-board {
+    display: flex;
+    justify-content: center; /* Горизонтальное выравнивание по центру */
+    align-items: center;
+    border: 2px double #034c7e;;  
+}
+
+.game-cell {
+    width: 35px; /* Ширина ячейки */
+    height: 35px; /* Высота ячейки */
+    background-color: #e8e8e8; /* Цвет фона ячейки */
+    text-align: center; /* Выравнивание текста по центру */
+    justify-content: center;
+    border: 2px double #034c7e; /* Граничная линия */
+    box-shadow: 0 0 10px rgba(3, 99, 114, 0.3); 
+}
+
+.bomb-image {
+    width: 30px;
+    height: 30px;
+}
+
+.flag-image {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.message {
+    text-shadow: 2px 2px 4px rgba(0, 48, 68, 0.5);  
+    font-size: 24px;
+    color: rgb(16, 102, 151);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    opacity: 0; /* Начальная прозрачность (невидимый) */
+    animation: fadeIn 1s ease-in-out forwards; /* Применяем анимацию fadeIn */
+}
+
+.player-result-box {
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: center; 
+   align-items: center;
+   margin-top: 10px;
+}
+
+.label-player {
+    padding-right: 10px;
+}
+
+.whoIsPlaying {
+    padding-top: 20px;
+    font-size: 36px;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Начальная прозрачность */
+  }
+  to {
+    opacity: 5; /* Конечная прозрачность (полностью видимый) */
+  }
+
+}
+
+.revealed {
+    background-color: rgb(184, 203, 214);
+}
